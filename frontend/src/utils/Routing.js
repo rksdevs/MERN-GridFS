@@ -18,7 +18,7 @@ const Routing = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<h1>Landing</h1>}></Route>
+        <Route path="/" element={<Guest Child={SignIn} />}></Route>
         <Route path="/signin" element={<Guest Child={SignIn} />}></Route>
         <Route path="/signup" element={<Guest Child={SignUp} />}></Route>
         <Route
