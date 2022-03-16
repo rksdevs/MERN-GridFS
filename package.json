@@ -1,19 +1,17 @@
 {
-  "name": "mern-gridfs",
+  "name": "gridfs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rksdevs/MERN-GridFS.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "npm start  --prefix Backend",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rksdevs/MERN-GridFS/issues"
-  },
-  "homepage": "https://github.com/rksdevs/MERN-GridFS#readme"
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
 }
